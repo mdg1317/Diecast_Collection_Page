@@ -1,0 +1,138 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+
+.column {
+flex: 25%;
+padding: 5px;
+text-align: center;
+}
+
+.headerRow {
+display: flex;
+}
+
+.headerColumn {
+display: flex;
+flex: 25%;
+padding: 5px;
+text-align: center;
+justify-content: center;
+min-width: 85px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+/* Clearfix (clear floats) */
+.headerRow::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.image {
+margin-top: 8px;
+vertical-align: middle;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height: 270px;
+width: 405px;
+object-fit: contain;
+}
+
+.image img {
+margin-top: 8px;
+vertical-align: middle;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height: 270px;
+width: 405px;
+object-fit: contain;
+}
+
+.image a {
+margin-top: 8px;
+vertical-align: middle;
+display: inline-block;
+margin-left: auto;
+margin-right: auto;
+height: 270px;
+width: 405px;
+object-fit: contain;
+}
+
+/* On screens that are 1440px wide or less, go from three columns to two columns */
+@media screen and (max-width: 1440px) {
+.column {
+  flex: 33.33%;
+}
+}
+
+/* On screens that are 960px wide or less, go from two columns to one column */
+@media screen and (max-width: 960px) {
+.column {
+  flex: 50%;
+}
+}
+
+h1 {
+margin-top: 0px;
+margin-left: auto;
+margin-right: auto;
+font-size: 30px;
+}
+
+.prev {
+padding: 8px;
+display: table;
+background-color: #f1f1f1;
+color: black;
+height: 60px;
+width: 60px;
+line-height: 60px;
+vertical-align: top;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 15px;
+}
+
+.next {
+padding: 8px;
+display: table;
+background-color: #f1f1f1;
+color: black;
+height: 60px;
+width: 60px;
+line-height: 60px;
+vertical-align: top;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 15px;
+}
+
+.back {
+padding: 8px;
+display: table;
+background-color: #f1f1f1;
+color: black;
+height: 60px;
+width: 60px;
+line-height: 60px;
+vertical-align: top;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 15px;
+}

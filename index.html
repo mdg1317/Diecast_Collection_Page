@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="javascripts/index.js"></script>
+    <link rel= "stylesheet" href= "stylesheets/index.css"/>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+    <title>Matthew's Diecast Collection</title>
+  </head>
+
+  <header>
+    <center>
+      <h1 id="header">Matthew's Diecast Collection</h1>
+    </center>
+  </header>
+
+  <body>
+    <center>
+      <p>Filter By:</p>
+    </center>
+    <div id="filters" class="filterRow">
+      <div class="filterColumn">
+        <input id="filterDriver" autocomplete="off" placeholder="Driver...">
+        <button id="clearDriver">Clear</button>
+      </div>
+      <div class="filterColumn">
+        <input id="filterNumber" autocomplete="off" placeholder="Number...">
+        <button id="clearNumber">Clear</button>
+      </div>
+      <div class="filterColumn">
+        <input id="filterSeries" autocomplete="off" placeholder="Series...">
+        <button id="clearSeries">Clear</button>
+      </div>
+      <div class="filterColumn">
+        <input id="filterSponsor" autocomplete="off" placeholder="Sponsor...">
+        <button id="clearSponsor">Clear</button>
+      </div>
+      <div class="filterColumn">
+        <input id="filterTeam" autocomplete="off" placeholder="Team...">
+        <button id="clearTeam">Clear</button>
+      </div>
+      <div class="filterColumn">
+        <input id="filterManufacturer" autocomplete="off" placeholder="Manufacturer...">
+        <button id="clearManufacturer">Clear</button>
+      </div>
+      <div class="filterColumn">
+        <input id="filterYear" autocomplete="off" placeholder="Year...">
+        <button id="clearYear">Clear</button>
+      </div>
+      <div class="filterColumn">
+        <input id="filterOther" autocomplete="off" placeholder="Other...">
+        <button id="clearOther">Clear</button>
+      </div>
+      <div class="filterColumn">
+        <button id="clearAll">Clear All</button>
+      </div>
+    </div>
+
+    <p class="results" id="resultsCounter"></p>
+
+    <center>
+      <p>Sort By:</p>
+    </center>
+    <div class="row">
+      <select name="sort" class="paginationSort" id="sortSelect">
+        <option value="0" selected>Number</option>
+        <option value="1">First Name</option>
+        <option value="2">Last Name</option>
+        <option value="3">Series</option>
+        <option value="4">Sponsor</option>
+        <option value="5">Team</option>
+        <option value="6">Manufacturer</option>
+        <option value="7">Year</option>
+        <option value="8">ID</option>
+      </select>
+    </div>
+
+    <center>
+      <p>Page:</p>
+    </center>
+    <div class="row">
+      <div class="pagination" id="pageSelect">
+        <a href="#" id="pageFirst">&laquo;</a>
+        <a href="#" id="pagePrev">&#8249;</a>
+        <a class="active" href="#" id="page0">1</a>
+        <a href="#" id="page1">2</a>
+        <a href="#" id="page2">3</a>
+        <a href="#" id="page3">4</a>
+        <a href="#" id="page4">5</a>
+        <a href="#" id="pageNext">&#8250;</a>
+        <a href="#" id="pageLast">&raquo;</a>
+      </div>
+    </div>
+  </body>
+</html>
